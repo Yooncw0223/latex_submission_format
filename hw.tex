@@ -1,0 +1,82 @@
+
+
+\author{Chanwoo Yoon}
+\date{02/05/2023}
+
+\documentclass{article}
+
+\usepackage{lipsum}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsfonts, amsthm, graphicx, geometry, lipsum}
+
+% package for links - call \href{link}{link name}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    pdftitle={6.033 Notes by Chanwoo Yoon (chanwooy - MIT)}
+}
+\usepackage{etoolbox}
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+
+% chapter title decoration
+\usepackage[T1]{fontenc}
+\usepackage{titlesec, xcolor}
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+
+\geometry{top=1.5cm, 
+          bottom=1.5cm, 
+          left=1.5cm, 
+          right=1.5cm,
+          includehead, includefoot}
+
+% package for putting code - call \begin{Verbatim}[frame=single]
+
+\usepackage{fancyvrb}
+\usepackage{fancyhdr, lastpage}
+\pagestyle{fancy}
+\lhead{PROBLEM SET}
+\rhead{CLASS}
+% package for fancy headers
+\cfoot{Page \thepage\ of \pageref{LastPage}}
+
+
+         
+
+
+% color box for definitions
+\usepackage{tcolorbox}
+
+% font
+\usepackage{libertinus}
+
+\title{\Huge PROBLEM SET}
+
+\begin{document}
+
+\maketitle
+
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+\section{Problem 1}
+
+
+\begin{minipage}{.8\textwidth}%
+\subsection*{a)}
+
+
+\end{minipage}
+
+\hspace*{1cm}%
+\begin{minipage}{.8\textwidth}%
+    A Single line statement.
+\end{minipage}%
+
+
+
+
+\end{document}
